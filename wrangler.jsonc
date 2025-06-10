@@ -1,5 +1,8 @@
 {
   "name": "worker-name",
   "compatibility_date": "2025-06-10",
-  "main": "source/public/index.html"
+  "main": "server.ts",
+  "assets": {
+    "directory": "server.ts"
+  }
 }
