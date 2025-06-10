@@ -12,3 +12,4 @@ source/config/_registers.ts
 
 source/csv/*
 .DS_Store
+.env
