@@ -1,0 +1,14 @@
+build
+node_modules/
+_requests/
+source/http
+source/config/_localVars.js
+source/config/_localVars.ts
+source/config/_procedureVars.js
+source/config/_procedureVars.ts
+source/config/_registers.js
+source/config/_registers.ts
+.vscode 
+
+source/csv/*
+.DS_Store

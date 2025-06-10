@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es6", "dom", "es2017"],
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": "./",
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "global",
+      "types",
+      "./node_modules/@types"
+    ],
+    "types": []
+  },
+  "exclude": [
+    "node_modules",
+    "./jest.config.js",
+    "./build/*"
+  ]
+}

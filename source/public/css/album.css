@@ -1,0 +1,91 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  --jumbotron-padding-x: 1rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y));
+    padding-bottom: calc(var(--jumbotron-padding-x));
+  }
+
+}
+@media (max-width: 800px) {
+  .manage-button{
+    margin-bottom: calc(var(--jumbotron-padding-x));
+  }
+
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 30rem;
+}
+
+footer {
+  padding-top: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.student-year{
+  margin-left: 5px;
+}
+
+#newStudent {
+  margin: 100px
+}
+
+#loginAdm {
+  margin: 100px
+}
+
+.config-buttons{
+  margin: 100px
+}
+
+#showNamesCheck{
+  margin: 10px
+}
+
+#configButton{
+  margin-top: 50px;
+}
+
+.page-link{
+  color: #408E57
+}
+.page-link:hover{
+  background-color: #408E57;
+  color: white
+}
+
+.manage-link:hover{
+  color: #346844;
+  cursor: pointer;
+}
+
+.manage-session{
+  margin-top: 10px;
+}
+
+.edit-button{
+  margin-right: 10px;
+}
