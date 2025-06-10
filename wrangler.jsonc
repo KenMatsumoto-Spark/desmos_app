@@ -1,8 +1,8 @@
 {
   "name": "worker-name",
   "compatibility_date": "2025-06-10",
-  "main": "server.ts",
+  "main": "/source/server.ts",
   "assets": {
-    "directory": "server.ts"
+    "directory": "/source/server.ts"
   }
 }
