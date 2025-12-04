@@ -4,7 +4,6 @@
   "main": "server.ts",
   "author": "Ken Matsumoto <h264matsumoto@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "test": "jest --runInBand",
     "dev": "tsc && tsnd --respawn --transpile-only --poll --no-notify source/server.ts",
