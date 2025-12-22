@@ -131,7 +131,7 @@ MainController.post('/create', async (request: Request, response: Response) => {
 
     console.log({ errorStudentCreation, newStudent })
 
-    if (errorStudentCreation) throw new Error("erro ao criar estudantes")
+    if (errorStudentCreation) throw new Error("erro ao criar estudantes " + errorStudentCreation)
 
 
     return response.send("estudante criado com sucesso")
