@@ -129,6 +129,8 @@ MainController.post('/create', async (request: Request, response: Response) => {
       desmos
     }))
 
+    console.log({ errorStudentCreation, newStudent })
+
     if (errorStudentCreation) throw new Error("erro ao criar estudantes")
 
 
@@ -264,5 +266,136 @@ MainController.patch('/configurations', async (request: Request, response: Respo
     return response.send('not found')
   }
 })
+
+// MainController.get('/1234567sdfgh1234567', async (request: Request, response: Response) => {
+
+//   try {
+
+//    const data = [
+//   {
+//     name: 'Gabriela Silva',
+//     year: '2022/1',
+//     desmos: 'https://www.desmos.com/calculator/g8ycsqtmfj'
+//   }
+//   // {
+//   //   name: 'Lucas Rossi',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/j5wace3v0z?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Gabriel Cardoso',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/iewxprccng?lang=pt-BR. '
+//   // },
+//   // {
+//   //   name: 'Anderson Souza',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/rkvm1yvzgp?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Nataly Costa',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/h2g9vtcpkk?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Matheus Rocha',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/ku73moa0la?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Antonio Gomes',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/4eitmbdo4g?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Giovana Freitas',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/l6tiyh0vqh?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Guilherme Dias',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/6lqfbxblik?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Guilherme Sallas',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/gi3wrdeery?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Henrique Vinico',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/kuachrsfyj?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Carlos Silva',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/fqdcmnc67d?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Thalia Ramos',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/zwhskcjocw?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Augusto Oliveira',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/sjdt3kvj9i?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Regiane Lara',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/bfnyzdebg5?lang=pt-BR'
+//   // },
+//   // {
+//   //   name: 'Gustavo Maia',
+//   //   year: '30/06/2022',
+//   //   desmos: 'https://www.desmos.com/calculator/wsivqbf1i2?lang=pt-BR'
+//   // }
+// ]
+
+// for (const entry of data){
+//         try{
+
+//         console.log({
+//           name: entry.name,
+//           year: entry.year,
+//           desmos: entry.desmos
+//         })
+//         const [errorDesmosState, desmosState] = await to (axios.get(entry.desmos))
+
+//         if(entry.desmos && errorDesmosState) {
+//           throw new Error('link inacessivel, verifique sua disponibilidade.')
+//         }
+
+//         if(/desmos.com/gm.test(entry.desmos) && !desmosState?.data?.state){
+//           throw new Error('link do desmos não possui informações do grafico.')
+//         }
+
+        
+//         await Student.create({
+//           name: entry.name,
+//           year: entry.year,
+//           desmos: entry.desmos
+//         })
+
+//         // const [errorStudentCreation, newStudent] = await to(Student.findOne())
+
+//         // console.log({errorStudentCreation, newStudent})
+//         // if (errorStudentCreation) throw new Error("erro ao criar estudantes")
+
+
+//       }catch(error){
+//         console.log({error})
+//       }
+
+
+// }
+
+//     return response.send('ok')
+//   } catch (error) {
+//     return response.status(422).send(error.message)
+//   }
+// })
 
 export default MainController

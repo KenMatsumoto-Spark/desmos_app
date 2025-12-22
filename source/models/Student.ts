@@ -4,7 +4,6 @@ import IStudent from '../interfaces/IStudent'
 import StudentSchema from '../schemas/StudentSchema'
 import aggregatePaginate from 'mongoose-aggregate-paginate-v2'
 
-
 const AutoIncrement = AutoIncrementFactory(mongoose.connection)
 
 interface IStudentModel extends mongoose.Model<IStudent> {aggregatePaginate: any}
